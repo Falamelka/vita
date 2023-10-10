@@ -1,0 +1,132 @@
+.footer {
+  color: rgba(255, 255, 255, 0.80);
+  border-radius: 8px 8px 0px 0px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 80px 0 80px;
+}
+
+.footer__inner {
+  display: grid;
+  gap: 40px 15px;
+  justify-content: space-between;
+  grid-template-columns: 2fr 1fr 1fr 2fr;
+}
+
+.footer__col-number {
+  display: block;
+  transition: $transition;
+}
+
+.footer__col-number:hover {
+  color: $accent-text;
+}
+
+.socials {
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.socials__list {
+  display: flex;
+  gap: 20px;
+}
+
+.socials__link path {
+  transition: $transition;
+}
+
+.socials__link:hover path {
+  fill: $accent-text;
+}
+
+.footer__tittle {
+  color: $general-text;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.footer__col-item {
+  margin-bottom: 10px;
+}
+
+.footer__col-link {
+  padding: 5px 0;
+  position: relative;
+  z-index: 1;
+  transition: $transition;
+}
+
+.footer__col-link::before {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 35px;
+  width: 50px;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(189, 0, 255, 0.00) 0%, rgb(0, 238, 255) 48.78%, rgba(189, 0, 255, 0.01) 99.99%, rgba(189, 0, 255, 0.00) 100%);
+
+  opacity: 0;
+  transition: $transition;
+}
+
+.footer__col-link:hover::before {
+  opacity: 1;
+}
+
+.footer__col-link:hover {
+  color: $accent-text;
+}
+
+.footer__form-subscribe {
+  display: flex;
+  width: 446px;
+}
+
+.footer__email-text {
+  color: rgba(255, 255, 255, 0.80);
+  font-size: 16px;
+  background: none;
+
+  width: 346px;
+  padding: 12px 24px;
+
+  border-radius: 4px 0px 0px 4px;
+  border: 1px solid rgba(255, 255, 255, 0.20);
+}
+
+.footer__submit-subscribe {
+  display: flex;
+  width: 132px;
+  height: 66px;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+
+  border-radius: 0px 4px 4px 0px;
+  background: $accent-text;
+
+  color: #0F041C;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.footer__col-text {
+  margin-bottom: 40px;
+}
+
+.copy_text {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.footer__line {
+  width: 100%;
+  height: 2px;
+  margin-top: 28px;
+
+  background: linear-gradient(90deg, rgba(189, 0, 255, 0.00) 1.52%, rgba(189, 0, 255, 0.36) 51.61%, rgba(189, 0, 255, 0.00) 100%);
+}
